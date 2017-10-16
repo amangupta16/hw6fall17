@@ -41,6 +41,7 @@ group :development do
 end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'simplecov', :require => false
   gem 'byebug'
 
   gem 'rspec-rails'
@@ -64,4 +65,3 @@ group :production do
   gem 'pg' # for Heroku deployment
   gem 'rails_12factor'
 end
-
